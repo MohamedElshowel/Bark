@@ -265,6 +265,43 @@ body main header nav .nav--pages-active, body main header nav .nav--pages li:hov
   body main header .header--logo {
     width: 20%;
   }
+  body main header nav.nav--block-screen {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+  }
+  body main header nav .nav--menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main header nav .nav--pages {
+    display: none;
+    position: absolute;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -10%;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff5c01;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-clip-path: circle(100% at 50% -10%);
+            clip-path: circle(100% at 50% -10%);
+  }
+  body main header nav .nav--pages li {
+    margin: 5%;
+  }
+  body main header nav .nav--pages-active, body main header nav .nav--pages li:hover {
+    -webkit-filter: opacity(0.7);
+            filter: opacity(0.7);
+    padding: 0;
+  }
 }
 
 body main .landing {
@@ -798,7 +835,7 @@ body footer .links--contact--social--links {
 
 body footer .links--contact--social--links li {
   width: 1.5em;
-  height: 1.5em;
+  height: 20px;
   margin-right: 7%;
   cursor: pointer;
 }
