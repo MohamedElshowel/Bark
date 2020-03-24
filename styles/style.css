@@ -4,6 +4,134 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body .block-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+body .block-screen .sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 55%;
+  background-color: white;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+body .block-screen .sign-up--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50%;
+  border-radius: 0.3em 0 0 0.3em;
+  background-color: #eee;
+}
+
+body .block-screen .sign-up--img img {
+  height: 95%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body .block-screen .sign-up--controller {
+  width: 50%;
+  height: 80%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .block-screen .sign-up--controller input {
+  width: 70%;
+  padding: 1em;
+  border-radius: 1.8em;
+  border: 1px solid transparent;
+  background-color: #e8f5fb;
+}
+
+body .block-screen .sign-up--controller--note {
+  color: #888;
+  font-size: 0.8em;
+  margin-top: -0.3em;
+}
+
+body .block-screen .sign-up--controller--btn {
+  background-color: #ff5c01;
+  color: white;
+  width: 11em;
+  height: 3em;
+  border-radius: 3.2em;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+
+body .block-screen .sign-up--controller--btn:hover {
+  -webkit-filter: contrast(0.8);
+          filter: contrast(0.8);
+}
+
+body .block-screen .sign-up--controller--close-btn {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  background: url(../assets/svg/cross.svg) no-repeat center;
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .block-screen .sign-up--controller--close-btn:hover {
+  background-color: #eee;
+}
+
 body main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,8 +287,9 @@ body main .landing--sign-up .btn {
   height: 3em;
   border-radius: 3.2em;
   border: none;
-  font-size: 16px;
   cursor: pointer;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -274,8 +403,9 @@ body .best-sellers--products .product:nth-child(2) .btn, body .best-sellers--pro
   height: 3em;
   border-radius: 3.2em;
   border: none;
-  font-size: 16px;
   cursor: pointer;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -348,8 +478,9 @@ body .story--article .btn {
   height: 3em;
   border-radius: 3.2em;
   border: none;
-  font-size: 16px;
   cursor: pointer;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -429,11 +560,16 @@ body footer .links {
 }
 
 body footer .links--brand-icon {
-  background: url(/assets/svg/logo.svg) no-repeat center;
+  background: url(../assets/svg/logo.svg) no-repeat center;
   -webkit-filter: invert(1);
           filter: invert(1);
   width: 10%;
   height: 50%;
+}
+
+body footer .links--brand-icon:hover {
+  -webkit-filter: contrast(0.05);
+          filter: contrast(0.05);
 }
 
 body footer .links--links-section {
@@ -491,7 +627,7 @@ body footer .links--contact--sign-up--text {
 }
 
 body footer .links--contact--sign-up--arrow {
-  background: url(/assets/svg/arrow-forward.svg) no-repeat center;
+  background: url(../assets/svg/arrow-forward.svg) no-repeat center;
   width: 1.5em;
   height: 1.5em;
   margin-left: 1em;
@@ -525,19 +661,19 @@ body footer .links--contact--social--links li:hover {
 }
 
 body footer .links--contact--social--links--facebook {
-  background: url(/assets/svg/social-fb.svg) no-repeat center;
+  background: url(../assets/svg/social-fb.svg) no-repeat center;
 }
 
 body footer .links--contact--social--links--instagram {
-  background: url(/assets/svg/social-insta.svg) no-repeat center;
+  background: url(../assets/svg/social-insta.svg) no-repeat center;
 }
 
 body footer .links--contact--social--links--twitter {
-  background: url(/assets/svg/social-tw.svg) no-repeat center;
+  background: url(../assets/svg/social-tw.svg) no-repeat center;
 }
 
 body footer .links--contact--social--links--youtube {
-  background: url(/assets/svg/social-yt.svg) no-repeat center;
+  background: url(../assets/svg/social-yt.svg) no-repeat center;
 }
 
 body footer .footer {
@@ -574,35 +710,35 @@ body footer .footer--payment--methods li:hover {
 }
 
 body footer .footer--payment--methods--paypal {
-  background: url(/assets/svg/payment-paypal.svg) no-repeat center;
+  background: url(../assets/svg/payment-paypal.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--mastercard {
-  background: url(/assets/svg/payment-mastercard.svg) no-repeat center;
+  background: url(../assets/svg/payment-mastercard.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--visa {
-  background: url(/assets/svg/payment-via.svg) no-repeat center;
+  background: url(../assets/svg/payment-via.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--amex {
-  background: url(/assets/svg/payment-amex.svg) no-repeat center;
+  background: url(../assets/svg/payment-amex.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--maestro {
-  background: url(/assets/svg/payment-maestro.svg) no-repeat center;
+  background: url(../assets/svg/payment-maestro.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--klarna {
-  background: url(/assets/svg/payment-klarna.svg) no-repeat center;
+  background: url(../assets/svg/payment-klarna.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--applepay {
-  background: url(/assets/svg/payment-apple.svg) no-repeat center;
+  background: url(../assets/svg/payment-apple.svg) no-repeat center;
 }
 
 body footer .footer--payment--methods--googlepay {
-  background: url(/assets/svg/payment-google.svg) no-repeat center;
+  background: url(../assets/svg/payment-google.svg) no-repeat center;
 }
 
 body footer .footer .copyright {

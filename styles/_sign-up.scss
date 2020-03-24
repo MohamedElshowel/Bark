@@ -1,0 +1,68 @@
+.block-screen {
+  @include flexCenter();
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  .sign-up {
+    @include flexCenter();
+    width: 50%;
+    height: 55%;
+    background-color: $second-bg-color;
+    border-radius: 0.3em;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    &--img {
+      @include flexCenter();
+      height: 100%;
+      width: 50%;
+      border-radius: 0.3em 0 0 0.3em;
+      background-color: $third-bg-color;
+      img {
+        height: 95%;
+        align-self: flex-end;
+      }
+    }
+    &--controller {
+      width: 50%;
+      height: 80%;
+      position: relative;
+      @include flexCenter();
+      flex-direction: column;
+      justify-content: space-around;
+
+      input {
+        width: 70%;
+        padding: 1em;
+        border-radius: 1.8em;
+        border: 1px solid transparent;
+        background-color: $main-color-lighter;
+      }
+
+      &--note {
+          color: $third-font-color;
+          font-size: 0.8em;
+          margin-top: -0.3em;
+      }
+
+      &--btn {
+          @include actionBtn();
+      }
+
+      &--close-btn {
+          position: absolute;
+          top: -10px;
+          right: 25px;
+          background: url(../assets/svg/cross.svg) no-repeat center;
+          width: 4%;
+          height: 4%;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover {
+              background-color: $third-bg-color;
+          }
+      }
+    }
+  }
+}
