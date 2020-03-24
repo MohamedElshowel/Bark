@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "./_variables";
+@import "./_devices";
+@import "./mixins";
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  @import "./main";
+
+  @import "./best-sellers";
+
+  @import "./story";
+
+  @import "./pattern";
+
+  @import "./footer";
+
+}

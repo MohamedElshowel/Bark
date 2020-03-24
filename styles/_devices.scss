@@ -1,0 +1,31 @@
+@mixin toDeviceWidth($device, $value: 0) {
+  @if $device == 'mobile' {
+    @media (min-width: 320px) {
+      @content;
+    }
+  } @else if $device == 'mobile-hr' {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else if $device == 'tablet' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $device == 'tablet-hr' {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $device == 'desktop' {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $device == 'desktop-wide' {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

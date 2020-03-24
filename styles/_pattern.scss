@@ -1,0 +1,22 @@
+.pattern {
+  background: url(../assets/images/pattern-desktop.png) no-repeat center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  @include flexCenter();
+  text-align: center;
+
+  &--offer {
+      width: 20%;
+    &--icon {
+        background: url(../assets/svg/shape-paw.svg) no-repeat center;
+        height: 2.5em;      
+    }
+    &--header {
+        font-size: 2.5em;
+    }
+    &--notes {
+        color: $third-font-color;
+    }
+  }
+}

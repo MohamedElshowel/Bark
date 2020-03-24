@@ -1,0 +1,45 @@
+.story {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &--img {
+    position: relative;
+    justify-self: right;
+    margin-top: 10%;
+    width: 35%;
+    &--blob {
+      position: absolute;
+      width: 80%;
+      margin-top: -10%;
+      margin-left: -15%;
+    }
+    &--circle {
+      position: absolute;
+      width: 76%;
+      margin-top: 7%;
+      margin-left: -3%;
+    }
+    &--animal {
+      position: absolute;
+      width: 72%;
+    }
+  }
+
+  &--article {
+    width: 35%;
+    align-self: center;
+
+    &--header {
+      font-size: 30px;
+    }
+    &--paragraph {
+      color: $third-font-color;
+    }
+
+    .btn {
+      @include actionBtn();
+      margin-top: 1.5em;
+    }
+  }
+}

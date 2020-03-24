@@ -1,0 +1,142 @@
+footer {
+  @include flexCenter();
+  flex-direction: column;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 90%;
+    padding-bottom: 3%;
+    box-shadow: 0px 2px #eee;
+
+    &--brand-icon {
+      background: url(/assets/svg/logo.svg) no-repeat center;
+      filter: invert(1);
+      width: 10%;
+      height: 50%;
+    }
+
+    &--links-section {
+      display: flex;
+      flex-direction: row;
+      width: 30%;
+      ul {
+        list-style-type: none;
+        width: 50%;
+        li {
+          margin: 7%;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $third-font-color;
+            &:hover {
+              color: $main-font-color;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    &--contact {
+      width: 30%;
+      &--sign-up {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        &--text {
+          color: $secondary-color;
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+        &--arrow {
+          background: url(/assets/svg/arrow-forward.svg) no-repeat center;
+          width: 1.5em;
+          height: 1.5em;
+          margin-left: 1em;
+          cursor: pointer;
+        }
+      }
+      &--social {
+        &--links {
+          justify-content: left;
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          li {
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 7%;
+            cursor: pointer;
+            &:hover {
+                filter: contrast(0);
+            }
+          }
+          &--facebook {
+            background: url(/assets/svg/social-fb.svg) no-repeat center;
+          }
+          &--instagram {
+            background: url(/assets/svg/social-insta.svg) no-repeat center;
+          }
+          &--twitter {
+            background: url(/assets/svg/social-tw.svg) no-repeat center;
+          }
+          &--youtube {
+            background: url(/assets/svg/social-yt.svg) no-repeat center;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    &--payment {
+      &--methods {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        li {
+          width: 3em;
+          height: 3em;
+          margin-right: 1em;
+          cursor: pointer;
+          &:hover {
+              filter: contrast(0.9);
+          }
+        }
+        &--paypal {
+          background: url(/assets/svg/payment-paypal.svg) no-repeat center;
+        }
+        &--mastercard {
+          background: url(/assets/svg/payment-mastercard.svg) no-repeat center;
+        }
+        &--visa {
+          background: url(/assets/svg/payment-via.svg) no-repeat center;
+        }
+        &--amex {
+            background: url(/assets/svg/payment-amex.svg) no-repeat center;
+        }
+        &--maestro {
+            background: url(/assets/svg/payment-maestro.svg) no-repeat center;
+        }
+        &--klarna{
+            background: url(/assets/svg/payment-klarna.svg) no-repeat center;
+        }
+        &--applepay{
+            background: url(/assets/svg/payment-apple.svg) no-repeat center;
+        }
+        &--googlepay {
+            background: url(/assets/svg/payment-google.svg) no-repeat center;
+        }
+      }
+    }
+
+    .copyright {
+      color: $third-font-color;
+    }
+  }
+}

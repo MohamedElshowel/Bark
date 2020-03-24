@@ -1,0 +1,20 @@
+{
+    "currency": "£",
+    "products": [
+        {
+            "imgURL": "assets/images/product1.png",
+            "description": "Natures Menu Dog Food Can Chicken",
+            "price": "22.81"
+        },
+        {
+            "imgURL": "assets/images/product2.png",
+            "description": "Natures Menu Senior Dog Food Pouch Lamb with Chicken",
+            "price": "11.92"
+        },
+        {
+            "imgURL": "assets/images/product3.png",
+            "description": "Real Meaty Dog Treats with Beef",
+            "price": "2.09"
+        }
+    ]
+}

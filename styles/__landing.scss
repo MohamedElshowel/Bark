@@ -1,0 +1,29 @@
+.landing {
+  display: flex;
+  flex-direction: row;
+  height: 88.5%;
+  width: 100%;
+  justify-content: center;
+  margin-left: -10%;
+
+  &--img {
+    align-self: flex-end;
+    width: 30%;
+  }
+
+  &--sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-self: center;
+    margin: 0 -15% 0 2%;
+    & h1 {
+      color: $secondary-font-color;
+      font-size: 40px;
+    }
+
+    & .btn {
+      @include actionBtn();
+    }
+  }
+}
