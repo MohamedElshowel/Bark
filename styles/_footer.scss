@@ -142,4 +142,33 @@ footer {
       color: $third-font-color;
     }
   }
+
+  @media (max-width: 860px) {
+    .links {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: 100%;
+      &--brand-icon {
+        margin-right: 45%;
+        margin-top: 0;
+        width: 30%;
+        height: 5%;
+      }
+      &--links-section {
+        width: 100%;
+      }
+      &--contact{
+        width: 70%;
+      }
+    }
+
+    .footer {
+      flex-direction: column;
+      &--payment {
+        width: 80%;
+      }
+    }
+  }
 }

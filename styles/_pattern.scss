@@ -19,4 +19,13 @@
         color: $third-font-color;
     }
   }
+
+  @media (max-width: 860px) {
+    background-image: url(../assets/images/pattern-mobile.png);
+    height: 50vh;
+    font-size: 0.6em;
+    &--offer {
+      width: 40%;
+    }
+  }
 }

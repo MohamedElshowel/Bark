@@ -62,6 +62,29 @@
           margin: 5% 0;
         }
       }
+
+      @media screen and (max-width: 720px) {
+        height: 350px;
+        .btn {
+          @include actionBtn();
+          display: block;
+          margin: 5% 0;
+        }
+      }
+    }
+
+    button {
+      color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+      &[aria-label="Next"] {
+        background: url(../assets/svg/chevron-next.svg) no-repeat center;
+      }
+      &[aria-label="Previous"] {
+        background: url(../assets/svg/chevron-prev.svg) no-repeat center;
+      }
     }
   }
 }

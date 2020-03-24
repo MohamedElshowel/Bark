@@ -81,4 +81,10 @@ header {
       }
     }
   }
+
+  @media (max-width: 860px) {
+    & .header--logo {
+      width: 20%;
+    }
+  }
 }
